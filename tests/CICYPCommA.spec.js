@@ -251,4 +251,5 @@ test('test', async ({ page }) => {
   await page.getByLabel('').locator('div').first().click();
   await page.getByRole('button', { name: 'Yes' }).click();
   await page.getByRole('button', { name: 'LOG OUT' }).click();
+  
 });
