@@ -105,8 +105,7 @@ test('test', async ({ page }) => {
   //await page.waitForTimeout(2000)
   await page.locator('#end').getByRole('cell').click()
  // await page.goto('https://www.testcellmasouthamptonaudiology.com/cellmaWEB/MarkAssessmentAsComplete.do');
-  await page.getByRole('button', { name: 'Save' }).click();
- 
+  await page.getByRole('button', { name: 'Save' }).click(); 
   await page.waitForTimeout(3000)
   await page.getByRole('img', { name: 'Riomed\'s CELLMA' }).click();
   await page.waitForTimeout(3000)
